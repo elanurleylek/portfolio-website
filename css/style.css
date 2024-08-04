@@ -1,0 +1,286 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+}
+img {
+    width: 80%;
+}
+.child_anasayfa img{
+    width: 60%;
+    height: 40%;
+    margin-top: 70px;
+    margin-left: 40px;
+    border-radius: 70px;
+}
+
+.section_title {
+    margin-bottom: 80px;
+}
+
+/*------------------ HEADER--------------- */
+header {
+    background: rgb(44, 37, 37);
+    border-bottom: 1px solid rgba(238, 238, 238, 0.8);
+    position: fixed;
+    width: 100%;
+    height: 11%;
+    z-index: 5;
+    display: flex;
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    justify-content:flex-start;
+    align-items: end;
+    margin: 0,auto;
+    width: 80%;
+    padding: 10px 0;
+}
+
+.navbar h2 {
+    color: #fff;
+}
+.nav_links {
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 25px;
+    padding: 0;
+    display: flex;
+    color: white;
+}
+
+.nav_links li a {
+    
+    margin-left: 15px;
+    color: white;
+    padding: 5px 15px;
+    transition: all .5s ease-in-out;
+}
+.nav_links li a:hover {
+    cursor: pointer;
+    background: #36BA98;
+}
+
+
+.logo img{
+    margin-bottom: -25px;  
+    width: 140px;
+    height: auto;   
+    margin-top: 80px;
+  
+}
+
+/*ANASAYFA*/
+.inner_anasayfa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+    color: white;
+}
+.child_anasayfa {
+    flex-basis: 45%;
+}
+.child_anasayfa h1 {
+    font-size: 50px;
+    color: rgb(52, 133, 180);
+}
+.child_anasayfa p {
+    font-size: 25px;
+    margin-bottom: 12px;
+    color: #fff;
+}
+.span_child {
+    color: red;
+}
+
+.btn {
+    background: rgb(52, 133, 180);
+    padding: 12px 12px;
+    border-radius: 20px;
+    color: #fff;
+    border: 1px solid rgb(52, 133, 180);
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.btn:hover {
+    background: red;
+}
+section {
+    padding: 100px;
+    background: #ffffff;
+    flex-direction: column;
+}
+
+/*YAZILIMLAR*/
+.innersoftware {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+    color: #fff;
+}
+.innersoftware_child {
+    flex-basis: 31%;
+    color: #fff;
+    padding: 25px 20px;
+    background: #36BA98;
+    border: 10px solid transparent;
+    transition: all .5s ease-in;
+}
+.innersoftware_child:hover {
+    border: 1px solid rgb(52, 133, 180);
+}
+.innersoftware_child.icon {
+    font-size: 25px;
+    color: rgb(52, 133, 180);
+}
+.innersoftware_child h3 {
+    font-size: 20px;
+    margin: 5px 0;
+}
+.section_title h2 {
+    position: relative;
+    text-align: center;
+    color: rgb(44, 37, 37);
+    font-size: 30px;
+    transition: all 0.5s ease-in-out;
+}
+.section_title h2:hover {
+    background-color: #36BA98;
+}
+
+
+/* HAKKIMIZDA */
+.resimclassi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Veya center, space-around gibi diğer değerler */
+   
+   
+}
+
+.resimclassi img {
+    
+    width: 20%;
+    height: 25%;
+    margin: 20px;
+    border-radius: 70px;
+    /* Resim üzerine bulanıklık eklemek için */
+    
+}   
+.bilgiyazisi {
+    background-color: rgba(255, 255, 255, 0.8); /* Arka plan rengi ve şeffaflık */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.bilgiyazisi h3 {
+    font-size: 25px;
+    color: rgb(52, 133, 180);
+}
+.bilgiyazisi p {
+    color: black;
+    font-size: 20px;
+    margin: 0;
+}
+
+/*İLETİŞİM*/
+.inner_contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 100%;
+    background-image: url('../img/iletişimsayfasi.jpg');
+   
+}
+.child_contact {
+    flex-basis: 45%;
+   
+}
+.child_contact form {
+    padding: 50px 40px;
+    background: transparent;
+    border-radius: 5px;
+}
+.child_contact form input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background: #B4B4B8;
+    transition: .3s ease-in;
+}
+.child_contact input {
+    color: red;
+}
+.child_contact form input,
+textarea:focus {
+    color: #fff;
+    letter-spacing: 1px;
+}
+.child_contact form input:last-child {
+    margin-bottom: 0;
+    background: rgb(52, 133, 180);
+    border: 1px solid rgb(52, 133, 180);
+    transition: .3s;
+}
+.child_contact form input:last-child:hover {
+    background: transparent;
+    color: #fff;
+}
+
+.social-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.social-buttons  button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.linkedin, .github{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.linkedin img, .github img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+
+/*footer*/
+.footer {
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
